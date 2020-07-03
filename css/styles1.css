@@ -1,0 +1,12 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: 310px 310px;
+    grid-template-rows: 120px;
+    gap: 5px;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.catelera-info {
+    grid-row: 1/3;
+}
