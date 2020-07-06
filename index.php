@@ -5,7 +5,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Cinema</title>
+    <title>AstroCine</title>
     <link rel="icon" type="image/jpg" href="img/antesicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel='stylesheet' href="css/normalize.css">
@@ -60,11 +60,22 @@
           
         </div>
 
-
-
-
     </main>
 
+    <div class="barra-baja">
+    <nav class="navegacion">
+                <a href="#">
+                <img src="img/facebook.png" alt="Siguenos en facebook">
+                <a href="#">
+                <img src="img/twitter.png" alt="Siguenos en Twitter">
+                <a href="#">
+                <img src="img/instagram.png" alt="Siguenos en Instagram">
+                
+        </nav>
+        
+        Todos los Derechos Reservados 2020 &copy;
+        
+    </div>
 </body>
 
 </html>

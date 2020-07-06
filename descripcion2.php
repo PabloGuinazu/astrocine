@@ -4,36 +4,30 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Cinema</title>
+    <title>CinemaPrueba</title>
     <link rel="icon" type="image/jpg" href="img/antesicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel='stylesheet' href="css/normalize.css">
 
-    <link rel='stylesheet' href="css/styles.css">
+    <link rel='stylesheet' href="css/styles1.css">
 </head>
 <header>
     <div class="barra">
-        <a href="Index.html">
-            <img src="img/icon.png" alt="logotipo cine">
-        </a>
         <nav class="navegacion">
-            <a href="index.php">Inicio</a>
-            <a href="#">Estrenos</a>
-            <a href="#">Preventa</a>
+            <a href="inicio.php">Estrenos</a>
+            <a href="inicio.php">Iniciar Sesion</a>
+            <a href="inicio.php">Registrarse</a>
         </nav>
-        <a href="#">
-            <img src="img/usuario_icon_superheroe.png" alt="Iniciar sesion">
-        </a>
     </div>
 
 </header>
 
 <body>
-    <video src="video/Motion - 18246.mp4" autoplay loop poster="video/poster.png"></video>
+<video src="video/Particulas.mp4" autoplay loop poster="video/Fondo.png"></video>
 
     <h1 class="centrar estilo-titulo">Disfruta de tu pelicula favorita</h1>
 
-    <div class="info">
+    <div class="contenedor">
     <?php
     include 'conexion.php';
     $consulta = ("SELECT * FROM detalles where id=".$_GET['id']);
@@ -41,12 +35,12 @@
     while ($f = mysqli_fetch_array( $resultado )){
         ?>
 
-        <div class="cartelera">
+        <div class="contenedor-carteleras descripcion">
         <img src="img/<?php echo $f['imagen'];?>" alt="Avenges End Game">
             <div class="contenido-cartelera centrar">
             <h6 class="estilo-descripcion"><?php echo $f['nombre'];?></h6>
                 <p class="disponibilidad">Estreno</p>
-                <a href="butacas.php?id=<?php echo $f['id'];?>" class="btn btn-rojo">Comprar</a>
+                <a href="descripcion.php?id=<?php echo $f['id'];?>" class="btn btn-rojo">Comprar</a>
             </div>
 
         </div>
