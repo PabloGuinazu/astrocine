@@ -13,11 +13,11 @@
 </head>
 <header>
     <div class="barra">
-        <a href="Index.html">
+        <a href="InicioCine.php">
             <img src="img/icon.png" alt="logotipo cine">
         </a>
         <nav class="navegacion">
-            <a href="index.php">Inicio</a>
+            <a href="InicioCine.php">Inicio</a>
             <a href="#">Estrenos</a>
             <a href="#">Preventa</a>
         </nav>
@@ -29,31 +29,30 @@
 </header>
 
 <body>
-
+<?php
+    include 'conexion.php';
+    $consulta = "SELECT * FROM butacas";
+    $resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");
+    
+        ?>
 
     <div class="contenedor ">
-        <div class="negro  centrar estilo-titulo">pantalla</div>
-        <div class="zona-asientos gris">
-            
-            <div class="silla centrar">A1</div>
-            <div class="silla centrar">A2</div>
-            <div class="silla centrar">A3</div>
-            <div class="silla centrar">A4</div>
-            <div class="silla centrar">A5</div>
-            <div class="silla centrar">B1</div>
-            <div class="silla centrar">B2</div>
-            <div class="silla centrar">B3</div>
-            <div class="silla centrar">B4</div>
-            <div class="silla centrar">B5</div>
-            <div class="silla centrar">C1</div>
-            <div class="silla centrar">C2</div>
-            <div class="silla centrar">C3</div>
-            <div class="silla centrar">C4</div>
-            <div class="silla centrar">C5</div>
+            <div class="negro  centrar estilo-titulo">pantalla</div>
+            <div class="zona-asientos gris">
+                <?php
+                while ($f = mysqli_fetch_array( $resultado )){
+                ?>
+                
+                <a href="carritoCompras.php?id=<?php echo $f['id'];?>"> 
+                <div class="silla centrar sinD"><?php echo $f['ubicacion'];?></div>
+                </a>
 
-        </div>
-        <br>
-      <a href="butacas.php?id=<?php echo $f['id'];?>" class="btn btn-rojo">Confirmar</a>
+                <?php
+        }
+        ?>
+            </div>
+            <br>
+       
     </div>
 </body>
 

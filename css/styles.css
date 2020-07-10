@@ -124,6 +124,10 @@ img {
     background-color: brown;
 }
 
+.btn-azul {
+    background-color: rgb(95, 112, 160);
+}
+
 .info {
     display: grid;
     grid-template-columns: 316px 316px;
@@ -190,4 +194,8 @@ video {
 
 .gris {
     background-color: gray;
+}
+
+.sinD {
+    text-decoration: none;
 }

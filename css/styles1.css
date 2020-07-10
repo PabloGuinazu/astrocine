@@ -62,7 +62,27 @@ body {
     font-family: 'Special Elite', cursive;
     color: white;
 }
+.estilo-descripcion {/*aun no utilizado*/
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Special Elite', cursive;
+    font-size: 14px;
+}
+/* botones */
+.btn {
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px 4rem;
+}
 
+.btn:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.btn-rojo {
+    background-color: brown;
+}
 
 /* global */
 
