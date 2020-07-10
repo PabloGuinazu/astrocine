@@ -143,7 +143,7 @@ img {
     border: 10px solid #676767;
     border-radius: 3px;
     margin: 0;
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -198,4 +198,11 @@ video {
 
 .sinD {
     text-decoration: none;
+}
+
+textarea {
+    width: 635px;
+    height: 260px;
+    background-color: #ADB5BA;
+    resize: none
 }

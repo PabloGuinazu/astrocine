@@ -44,7 +44,7 @@
         <div class="cartelera">
         <img src="img/<?php echo $f['imagen'];?>" alt="Avenges End Game">
             <div class="contenido-cartelera centrar">
-            <h6 class="estilo-descripcion"><?php echo $f['nombre'];?></h6>
+            <p class="estilo-descripcion"><?php echo $f['nombre'];?></p>
                 <p class="disponibilidad">Estreno</p>
                 <a href="butacas.php?id=<?php echo $f['id'];?>" class="btn btn-rojo">Comprar</a>
             </div>
@@ -53,9 +53,11 @@
    
         <div style="text-align:left;" class="descripcionTotal">
             <iframe src="https:<?php echo $f['videoy'];?>" width="640" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                
-                <h6><?php echo $f['descripcion'];?></h6>
+
+            <p><textarea readonly name="comentario" rows="5" cols="50" value=""><?php echo $f['descripcion'];?></textarea></p>
+            <p></p>
         </div>
+        
     </div>
     <?php
     }

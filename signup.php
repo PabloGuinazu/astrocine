@@ -40,8 +40,8 @@
     <form action="signup.php" method="POST">
       <input name="email" type="text" placeholder="Ingrese su correo">
       <input name="password" type="password" placeholder="Ingrese su contraseña">
-     <input name="confirm_password" type="password" placeholder="Confirme contraseña">
-       
+     <!-- <input name="confirm_password" type="password" placeholder="Confirme contraseña">
+      <!--> 
       <input type="submit" value="Continuar">
     </form>
 

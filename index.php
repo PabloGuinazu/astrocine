@@ -21,7 +21,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Welcome to you WebApp</title>
+    <title>Bienvenido a Cinema!</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
@@ -29,16 +29,19 @@
     <?php require 'partials/header.php' ?>
 
     <?php if(!empty($user)): ?>
-      <br> Welcome. <?= $user['email']; ?>
-      <br>You are Successfully Logged In
+      <br> Bienvenido a Cinema <?= $user['email']; ?>
+      <br>Usted ha ingresado correctamente! <br>
       <a href="logout.php">
-        Logout
+        Elegir otro usario o salir.
       </a>
+      <H1>IR A CINEMA</H1>
+      <a href="InicioCine.php"><H1>IR</H1></a>
     <?php else: ?>
-      <h1>Please Login or SignUp</h1>
+      <h3>o <h3>
+      <h1>Ingrese en su usuario o registrese </h1>
 
-      <a href="login.php">Login</a> or
-      <a href="signup.php">SignUp</a>
+      <a href="login.php">Ingresar</a> o
+      <a href="signup.php">Registrar</a>
     <?php endif; ?>
   </body>
 </html>

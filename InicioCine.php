@@ -74,9 +74,12 @@
                 
         </nav>
         
-        Todos los Derechos Reservados 2020 &copy;
         
+        <footer class="sinD">
+    Todos los Derechos Reservados 2020 &copy;
+    </footer>
     </div>
+    
 </body>
 
 </html>
