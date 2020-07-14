@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-07-2020 a las 04:50:40
+-- Tiempo de generación: 14-07-2020 a las 03:57:47
 -- Versión del servidor: 10.4.13-MariaDB
 -- Versión de PHP: 7.4.7
 
@@ -81,7 +81,19 @@ INSERT INTO `compras` (`id`, `numeroventa`, `nombre`, `precio`, `cantidad`, `sub
 (5, 1, '', '200', '2', '400'),
 (6, 2, '', '200', '1', '200'),
 (7, 2, '', '200', '1', '200'),
-(8, 3, 'A-4', '200', '2', '400');
+(8, 3, 'A-4', '200', '2', '400'),
+(9, 4, 'A-4', '200', '1', '200'),
+(10, 4, 'C-2', '200', '1', '200'),
+(11, 5, 'A-2', '200', '1', '200'),
+(12, 5, 'C-4', '200', '1', '200'),
+(13, 6, 'C-3', '200', '1', '200'),
+(14, 6, 'A-1', '200', '1', '200'),
+(15, 6, 'B-5', '200', '1', '200'),
+(16, 7, 'A-2', '200', '1', '200'),
+(17, 7, 'C-4', '200', '1', '200'),
+(18, 7, 'B-4', '200', '1', '200'),
+(19, 8, 'C-5', '200', '1', '200'),
+(20, 8, 'C-1', '200', '1', '200');
 
 -- --------------------------------------------------------
 
@@ -120,6 +132,15 @@ CREATE TABLE `users` (
   `email` varchar(50) DEFAULT NULL,
   `password` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `password`) VALUES
+(1, 'pablo@gmail.com', '$2y$10$5XUY9IFX6dowMPaVjaofz.XgixvbIDSwQYuOk.AqhiRBPtB6fYp7S'),
+(2, 'claudio@gmail.com', '$2y$10$aMxBRjAxKpK1exF04CITCO5a.MDjGCdYiJNFi9nZgBAW5EjH5RhSm'),
+(3, 'joanaxd@gmail.com', '$2y$10$AXtK3oIGqF30DOm1recJp.GD3ioT6vgV6vpwlmL9Cc3VBE1GdVfSC');
 
 --
 -- Índices para tablas volcadas
@@ -163,7 +184,7 @@ ALTER TABLE `butacas`
 -- AUTO_INCREMENT de la tabla `compras`
 --
 ALTER TABLE `compras`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `detalles`
@@ -175,7 +196,7 @@ ALTER TABLE `detalles`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
