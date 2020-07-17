@@ -62,7 +62,7 @@
     <link rel='stylesheet' href="css/normalize.css">
 
     <link rel='stylesheet' href="css/styles.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/scripts.js" ></script>
     
 </head>
@@ -95,11 +95,16 @@
                 for($i=0;$i<count($datos);$i++){
 
                     ?>
-                        <span><?php echo $datos[$i]['Ubicacion']?></span><br>
-                        <span>Precio: <?php echo $datos[$i]['Precio'];?></span><br>
-                        <span>Cantidad: <input type="text" value="<?php echo $datos[$i]['Cantidad'];?>"></span><br>
-                        <span>Total: : <?php echo $datos[$i]['Cantidad']*$datos[$i]['Precio'];?></span><br>
+                        <div class="producto">
+                            <span><?php echo $datos[$i]['Ubicacion'];?></span><br>
+                            <span>Precio: <?php echo $datos[$i]['Precio'];?></span><br>
+                            <span>Cantidad: 
+                            <input type="text" value="<?php echo $datos[$i]['Cantidad'];?>">
+                            </span><br>
 
+                            <span>Total: <?php echo $datos[$i]['Cantidad']*$datos[$i]['Precio'];?></span><br>
+                            <a href="#" class="eliminar" data-id="<?php echo $datos[$i]['Id']?>">Eliminar</a><br>
+                        </div>
                     <?php
 
                     $total=($datos[$i]['Cantidad']*$datos[$i]['Precio'])+$total;

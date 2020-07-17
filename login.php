@@ -38,7 +38,7 @@
 
     <?php if(!empty($message)): ?>
       <p> <?= $message ?></p>
-    <?php endif; ?>
+    <?php endif; ?>n 
 
     <h1>Ingresar</h1>
     <span>o <a href="signup.php">Registrese</a></span>
