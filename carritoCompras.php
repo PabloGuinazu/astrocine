@@ -119,10 +119,29 @@
             <?php
             if($total!=0){ 
                 ?>
-            <a href="compras/compras.php" class="btn btn-rojo">Comprar</a>
+            <!-- <a href="compras/compras.php" class="btn btn-rojo">Comprar</a> -->
+            
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_cart">
+                <input type="hidden" name="upload" value="1">
+                <input type="hidden" name="business" value="astrocineoficial@gmail.com">
+                <input type="hidden" name="currency_code" value="USD">
+                
+                <?php
+                    for($i=0;$i<count($datos);$i++){
+                ?>
+                <input type="hidden" name="item_name_<?php echo $i+1;?>" value="Entada: <?php echo $datos[$i]['Ubicacion'];?>">
+                <input type="hidden" name="amount_<?php echo $i+1;?>" value="200"> <!--aqui iba precio-->
+                <?php
+                    }
+                ?>
+                
+                <input type="submit" value="comprar" class="btn btn-rojo">
+            </form>
             <?php
             }
             ?>
+            
     </div>
 </body>
 
