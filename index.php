@@ -1,47 +1,77 @@
-<?php
-  session_start();
-
-  require 'database.php';
-
-  if (isset($_SESSION['user_id'])) {
-    $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');
-    $records->bindParam(':id', $_SESSION['user_id']);
-    $records->execute();
-    $results = $records->fetch(PDO::FETCH_ASSOC);
-
-    $user = null;
-
-    if (count($results) > 0) {
-      $user = $results;
-    }
-  }
-?>
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+
+	<meta charset="utf-8">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
+		<link rel="stylesheet" type="text/css" href="estilos/estilos.css">
     <title>Bienvenido a Cinema!</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <?php require 'partials/header.php' ?>
+</head>
 
-    <?php if(!empty($user)): ?>
-      <br> Bienvenido a Cinema <?= $user['email']; ?>
-      <br>Usted ha ingresado correctamente! <br>
-      <a href="logout.php">
-        Elegir otro usario o salir.
-      </a>
-      <H1>IR A CINEMA</H1>
-      <a href="InicioCine.php"><H1>IR</H1></a>
-    <?php else: ?>
-      <h3>o <h3>
-      <h1>Ingrese en su usuario o registrese </h1>
+	<center>
+ <?php require 'partials/header.php' ?>
+		<div class="tit"><h2 style="color: #0000FF; ">Inicio de sesión</h2>
+		<center><div class="Ingreso">
 
-      <a href="login.php">Ingresar</a> o
-      <a href="signup.php">Registrar</a>
-    <?php endif; ?>
-  </body>
+	<table border="0" align="center" valign="middle">
+		<tr>
+		<td rowspan=2>
+		<form action="validar.php" method="post">
+
+		<table border="0">
+
+		<tr><td><label style="font-size: 14pt"><b>Correo: </b></label></td>
+			<td width=80> <input class="form-group has-success" style="border-radius:15px;" type="text" name="mail"></td></tr>
+		<tr><td><label style="font-size: 14pt"><b>Contraseña: </b></label></td>
+			<td witdh=80><input style="border-radius:15px;" type="password" name="pass"></td></tr>
+		<tr><td></td>
+			<td width=80 align=center><input class="btn btn-primary" type="submit" value="Aceptar"></td>
+			</tr></tr></table>
+		</form>
+<br>
+<!-- formulario registro -->
+
+<form method="post" action="" >
+  <fieldset>
+    <legend  style="font-size: 18pt"><b>Registro</b></legend>
+    <div class="form-group">
+      <label style="font-size: 14pt"><b>Ingresa tu nombre</b></label>
+      <input type="text" name="realname" class="form-control" placeholder="Ingresa tu nombre" />
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt; color: #FFFFFF;"><b>Ingresa tu email</b></label>
+      <input type="text" name="nick" class="form-control"  required placeholder="Ingresa mail"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt; color: #FFFFFF;"><b>Ingresa tu Password</b></label>
+      <input type="password" name="pass" class="form-control"  placeholder="Ingresa contraseña" />
+    </div>
+    <div class="form-group">
+      <input type="password" name="rpass" class="form-control" required placeholder="Repita contraseña" />
+    </div>
+      
+    </div>
+   
+    <input  class="btn btn-danger" type="submit" name="submit" value="Registrarse"/>
+
+  </fieldset>
+</form>
+</div>
+<?php
+		if(isset($_POST['submit'])){
+			require("registro.php");
+		}
+	?>
+<!--Fin formulario registro -->
+
+		</td>
+		</tr>
+		</table>
+		</div></center></div></center>
+
+	
+</body>
 </html>

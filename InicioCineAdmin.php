@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -20,7 +19,9 @@
         <nav class="navegacion">
             <a href="InicioCine.php">Inicio</a>
             <a href="#">Estrenos</a>
-            <a href="admin.php">admin</a>
+            <a href="#">Preventa</a>
+            <a href="#">CRUD</a>
+            <a href="#">Lo que el Pablo quiera</a>
             <a href="logout.php">Salir</a>
         </nav>
         <a href="#">
