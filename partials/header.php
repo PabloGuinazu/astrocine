@@ -1,3 +1,3 @@
 <header>
-  <a href="/php-login">CINEMA</a>
+  <a href="/php-login">ASTROCINE</a>
 </header>

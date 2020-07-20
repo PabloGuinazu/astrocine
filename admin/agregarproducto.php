@@ -22,7 +22,7 @@
             <a href="../admin.php">Administracion</a>
             <a href="modificar.php">Gestionar</a>
         </nav>
-        <a href="logout.php">
+        <a href="../logout.php">
             <img src="../img/salir.png" alt="Salir">
         </a>
     </div>
