@@ -17,14 +17,9 @@
         <a href="InicioCine.php">
             <img src="img/icon.png" alt="logotipo cine">
         </a>
-        <nav class="navegacion">
-            <a href="InicioCine.php">Inicio</a>
-            <a href="#">Estrenos</a>
-            <a href="admin.php">admin</a>
-            <a href="logout.php">Salir</a>
-        </nav>
-        <a href="#">
-            <img src="img/usuario_icon_superheroe.png" alt="Iniciar sesion">
+        <h1>AstroCine</h1>
+        <a href="logout.php">
+            <img src="img/salir.png" alt="Salir">
         </a>
     </div>
 
@@ -65,11 +60,11 @@
 
     <div class="barra-baja">
     <nav class="navegacion">
-                <a href="#">
+                <a href="https://www.facebook.com/AstrocineOficial-103305874804749">
                 <img src="img/facebook.png" alt="Siguenos en facebook">
-                <a href="#">
+                <a href="https://twitter.com/AstroCineOfici1/status/1285088926928121856">
                 <img src="img/twitter.png" alt="Siguenos en Twitter">
-                <a href="#">
+                <a href="https://www.instagram.com/astrocineoficial/?hl=es-la">
                 <img src="img/instagram.png" alt="Siguenos en Instagram">
                 
         </nav>

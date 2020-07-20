@@ -13,17 +13,17 @@
 </head>
 <header>
     <div class="barra">
-        <a href="InicioCine.php">
+         <a href="InicioCineAdmin.php">
             <img src="img/icon.png" alt="logotipo cine">
         </a>
         <nav class="navegacion">
-            <a href="InicioCine.php">Inicio</a>
-            <a href="#">Estrenos</a>
+            <a href="InicioCineAdmin.php">Inicio</a>
+            <a href="admin/modificar.php">Gestionar</a>
             <a href="./admin/agregarproducto.php" >Agregar</a>
-            <a href="logout.php">Salir</a>
+            
         </nav>
-        <a href="#">
-            <img src="img/usuario_icon_superheroe.png" alt="Iniciar sesion">
+        <a href="logout.php">
+            <img src="img/salir.png" alt="Salir">
         </a>
     </div>
 

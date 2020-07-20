@@ -37,7 +37,7 @@
 							'".$imagen."',
 							'".$video."')";
                     mysqli_query($conexion,$sql);
-					// header ("Location: agregarproducto.php");
+					 header ("Location: agregarproducto.php");
 		      }
 		    }
 		  }else{

@@ -68,16 +68,12 @@
 </head>
 <header>
     <div class="barra">
-        <a href="InicioCine.php">
+    <a href="InicioCine.php">
             <img src="img/icon.png" alt="logotipo cine">
         </a>
-        <nav class="navegacion">
-            <a href="InicioCine.php">Inicio</a>
-            <a href="#">Estrenos</a>
-            <a href="#">Preventa</a>
-        </nav>
-        <a href="#">
-            <img src="img/usuario_icon_superheroe.png" alt="Iniciar sesion">
+        <h1>AstroCine</h1>
+        <a href="logout.php">
+            <img src="img/salir.png" alt="Salir">
         </a>
     </div>
 

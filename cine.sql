@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-07-2020 a las 03:57:47
+-- Tiempo de generación: 20-07-2020 a las 07:53:07
 -- Versión del servidor: 10.4.13-MariaDB
 -- Versión de PHP: 7.4.7
 
@@ -93,7 +93,8 @@ INSERT INTO `compras` (`id`, `numeroventa`, `nombre`, `precio`, `cantidad`, `sub
 (17, 7, 'C-4', '200', '1', '200'),
 (18, 7, 'B-4', '200', '1', '200'),
 (19, 8, 'C-5', '200', '1', '200'),
-(20, 8, 'C-1', '200', '1', '200');
+(20, 8, 'C-1', '200', '1', '200'),
+(21, 9, 'C-4', '200', '2', '400');
 
 -- --------------------------------------------------------
 
@@ -119,28 +120,33 @@ INSERT INTO `detalles` (`id`, `nombre`, `descripcion`, `imagen`, `videoy`) VALUE
 (3, 'Guardianes de la Galaxia vol. 2', 'Una poderosa raza alienígena contrata a los Guardianes para que protejan sus valiosas baterías de energía, pero, cuando Rocket las roba, los alienígenas envían a sus tropas de combate a vengarse de los Guardianes. Mientras tratan de escapar con vida, intentan resolver el misterio de los verdaderos orígenes de Peter Quill.', 'Guardianes_galaxia2.jpg', 'www.youtube.com/embed/wUn05hdkhjM'),
 (4, 'Mulán', 'El emperador chino emite un decreto que exige que cada hogar debe reclutar a un varón para luchar con el ejército imperial en la guerra contra los Hunos. Para salvar a su anciano padre de este deber, su única hija Fa Mulan se hace pasar por soldado y toma su lugar. La joven se someterá a un duro entrenamiento hasta hacerse merecedora de la estima y de la confianza del resto de su escuadrón.', 'MULAN.jpg', 'www.youtube.com/embed/KK8FHdFluOQ'),
 (5, 'Wonder Woman 2', 'Diana Prince, conocida como Wonder Woman se enfrenta a Cheetah, una villana que posee fuerza y agilidad sobrehumanas.', 'WonderWoman.jpg', 'www.youtube.com/embed/sfM7_JLk-84'),
-(6, 'Rogue One: una historia de Star Wars', 'El Imperio va a construir una estación espacial capaz de destruir planetas, conocida como la Estrella de la Muerte. Los rebeldes, conocedores de esto, se embarcan en una misión extraordinaria: robar los planos y sabotear la estación.', 'STARWARS.jpg', 'www.youtube.com/embed/frdj1zb9sMY');
+(6, 'Rogue One: una historia de Star Wars', 'El Imperio va a construir una estación espacial capaz de destruir planetas, conocida como la Estrella de la Muerte. Los rebeldes, conocedores de esto, se embarcan en una misión extraordinaria: robar los planos y sabotear la estación.', 'STARWARS.jpg', 'www.youtube.com/embed/frdj1zb9sMY'),
+(7, 'Venom', 'El periodista Eddie Brock está investigando a Carlton Drake, el célebre fundador de Life Foundation. Brock establece una simbiosis con un ente alienígena que le ofrece superpoderes, pero el ser se apodera de su personalidad y lo vuelve perverso.', '178760_VENOM.jpg', 'www.youtube.com/embed/mYTmQWZkw10');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `users`
+-- Estructura de tabla para la tabla `login`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `login` (
   `id` int(11) NOT NULL,
-  `email` varchar(50) DEFAULT NULL,
-  `password` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `user` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL,
+  `email` varchar(250) NOT NULL,
+  `pasadmin` varchar(250) NOT NULL,
+  `rol` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `users`
+-- Volcado de datos para la tabla `login`
 --
 
-INSERT INTO `users` (`id`, `email`, `password`) VALUES
-(1, 'pablo@gmail.com', '$2y$10$5XUY9IFX6dowMPaVjaofz.XgixvbIDSwQYuOk.AqhiRBPtB6fYp7S'),
-(2, 'claudio@gmail.com', '$2y$10$aMxBRjAxKpK1exF04CITCO5a.MDjGCdYiJNFi9nZgBAW5EjH5RhSm'),
-(3, 'joanaxd@gmail.com', '$2y$10$AXtK3oIGqF30DOm1recJp.GD3ioT6vgV6vpwlmL9Cc3VBE1GdVfSC');
+INSERT INTO `login` (`id`, `user`, `password`, `email`, `pasadmin`, `rol`) VALUES
+(1, 'Administrador', '', 'admin@gmail.com', '123456', 1),
+(6, 'simon', '123', 'simon@gmail.com', '', 2),
+(7, 'Pablo', '123', 'pablo@gmail.com', '', 2),
+(8, 'simon', '1234', 'simon1@gmail.com', '', 2);
 
 --
 -- Índices para tablas volcadas
@@ -165,9 +171,9 @@ ALTER TABLE `detalles`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `users`
+-- Indices de la tabla `login`
 --
-ALTER TABLE `users`
+ALTER TABLE `login`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -184,19 +190,19 @@ ALTER TABLE `butacas`
 -- AUTO_INCREMENT de la tabla `compras`
 --
 ALTER TABLE `compras`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT de la tabla `detalles`
 --
 ALTER TABLE `detalles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT de la tabla `users`
+-- AUTO_INCREMENT de la tabla `login`
 --
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `login`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
