@@ -61,11 +61,11 @@
     <div class="barra-baja">
     <nav class="navegacion">
                 <a href="https://www.facebook.com/AstrocineOficial-103305874804749">
-                <img src="img/facebook.png" alt="Siguenos en facebook">
+                <img src="img/facebook.png" alt="Siguenos en facebook"></a>
                 <a href="https://twitter.com/AstroCineOfici1/status/1285088926928121856">
-                <img src="img/twitter.png" alt="Siguenos en Twitter">
+                <img src="img/twitter.png" alt="Siguenos en Twitter"></a>
                 <a href="https://www.instagram.com/astrocineoficial/?hl=es-la">
-                <img src="img/instagram.png" alt="Siguenos en Instagram">
+                <img src="img/instagram.png" alt="Siguenos en Instagram"></a>
                 
         </nav>
         

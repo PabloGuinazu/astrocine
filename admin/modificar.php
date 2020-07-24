@@ -31,7 +31,7 @@
             <a href="../admin.php">Administracion</a>
             <a href="agregarproducto.php" >Agregar</a>
         </nav>
-        <a href="logout.php">
+        <a href="../logout.php">
             <img src="../img/salir.png" alt="Salir">
         </a>
     </div>

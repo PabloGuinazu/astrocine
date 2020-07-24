@@ -36,7 +36,8 @@
 							'".$descripcion."',
 							'".$imagen."',
 							'".$video."')";
-                    mysqli_query($conexion,$sql);
+					mysqli_query($conexion,$sql);
+					echo 'Cartelera agregada';
 					 header ("Location: agregarproducto.php");
 		      }
 		    }

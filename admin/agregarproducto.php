@@ -30,7 +30,7 @@
 </header>
 
 <body>
-    <h1 class="centrar">Agregar nueva cartelera.</h1>
+    <h1 class="centrar">Agregar nueva cartelera</h1>
     <form action="altaproducto.php" method = "post" enctype="multipart/form-data">
 		<fieldset>
 			Nombre<br>
@@ -49,6 +49,7 @@
 			<input type="text" name="video">
 		</fieldset>
 		<input type="submit" name="accion" value="Enviar" class="aceptar">
+        
 	</form>	
 	
 		</form>
