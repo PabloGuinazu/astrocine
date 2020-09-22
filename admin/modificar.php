@@ -16,7 +16,7 @@
     <link rel="icon" type="image/jpg" href="../img/antesicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel='stylesheet' href="../css/normalize.css">
-    <link rel='stylesheet' href="../css/styles.css" type="text/css">
+    <link rel='stylesheet' href="../css/styles4.css" type="text/css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="../js/modificar.js" ></script>
 

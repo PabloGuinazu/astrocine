@@ -61,7 +61,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel='stylesheet' href="css/normalize.css">
 
-    <link rel='stylesheet' href="css/styles.css">
+    <link rel='stylesheet' href="css/styles4.css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/scripts.js" ></script>
     
@@ -94,11 +94,8 @@
                         <div class="producto">
                             <span><?php echo $datos[$i]['Ubicacion'];?></span><br>
                             <span>Precio: <?php echo $datos[$i]['Precio'];?></span><br>
-                            <span>Cantidad: 
-                            <input type="text" value="<?php echo $datos[$i]['Cantidad'];?>">
-                            </span><br>
+                            <span>Cantidad: 1 </span><br>
 
-                            <span>Total: <?php echo $datos[$i]['Cantidad']*$datos[$i]['Precio'];?></span><br>
                             <a href="#" class="eliminar" data-id="<?php echo $datos[$i]['Id']?>">Eliminar</a><br>
                         </div>
                     <?php
@@ -115,7 +112,7 @@
             <?php
             if($total!=0){ 
                 ?>
-            <!-- <a href="compras/compras.php" class="btn btn-rojo">Comprar</a> -->
+            <!-- <a href="InicioCine.php" class="btn btn-rojo">Comprar</a> -->
             
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="cmd" value="_cart">
@@ -139,6 +136,7 @@
             ?>
             
     </div>
+    
 </body>
 
 </html>

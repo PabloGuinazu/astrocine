@@ -1,0 +1,214 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
+
+
+/*global*/
+
+.contenedor {
+    max-width: 950px;
+    /*1200px*/
+    margin: 0 auto;
+    /* margin-left: 380px;
+margin-right: 380px; */
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*header*/
+
+
+/* barra de menu */
+
+.barra {
+    background-color: #212F3D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    text-decoration: none;
+    height: 100px;
+}
+
+
+/*navegacion*/
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.navegacion a:hover {
+    color: black;
+}
+
+
+/*cartelera*/
+
+.contenedor-carteleras {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cartelera {
+    flex: 0 0 calc(33.3% - 1rem);
+    border: 2px solid #b5b5b5;
+    background-color: #B4B9B6;
+    margin-bottom: 2rem;
+}
+
+.contenido-cartelera {
+    padding: 2rem;
+    margin-bottom: 0;
+}
+
+.disponibilidad {
+    color: black;
+    font-weight: 700;
+}
+
+
+/*utilidades*/
+
+.centrar {
+    text-align: center;
+}
+
+
+/* .seccion {
+/* alinea el contenedor con el resto contenido */
+
+
+/**/
+
+
+/* margin-top: 2rem;
+margin-bottom: 2rem;
+} */
+
+*/ .estilo-descripcion {
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Special Elite', cursive;
+    font-size: 14px;
+}
+
+.estilo-titulo {
+    font-family: 'Special Elite', cursive;
+    color: white;
+}
+
+
+/*botones*/
+
+.btn {
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px 4rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.btn-rojo {
+    background-color: brown;
+}
+
+.btn-azul {
+    background-color: rgb(95, 112, 160);
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 316px 316px;
+    grid-auto-rows: 780px;
+    gap: 5px;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.descripcionTotal {
+    background-color: #ADB5BA;
+    padding-right: 40rem;
+    border: 10px solid #676767;
+    border-radius: 3px;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* video de fondo */
+
+video {
+    position: fixed;
+    min-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+
+/* footer */
+
+.barra-baja {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.zona-asientos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 100px;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.silla {
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.silla:hover {
+    border: 2px solid green;
+}
+
+.butaca-con {
+    padding-top: 7rem;
+}
+
+.negro {
+    background-color: black;
+}
+
+.gris {
+    background-color: gray;
+}
+
+.sinD {
+    text-decoration: none;
+}
+
+textarea {
+    width: 635px;
+    height: 260px;
+    background-color: #ADB5BA;
+    resize: none;
+}

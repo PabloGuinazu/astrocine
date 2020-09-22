@@ -9,20 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel='stylesheet' href="css/normalize.css">
 
-    <link rel='stylesheet' href="css/styles.css">
+    <link rel='stylesheet' href="css/styles4.css">
 </head>
-<header>
-    <div class="barra">
-    <a href="InicioCine.php">
-            <img src="img/icon.png" alt="logotipo cine">
-        </a>
-        <h1>AstroCine</h1>
-        <a href="logout.php">
-            <img src="img/salir.png" alt="Salir">
-        </a>
-    </div>
+    <header>
+        <div class="barra">
+            <a href="InicioCine.php">
+                <img src="img/icon.png" alt="logotipo cine">
+            </a>
+            <h1>AstroCine</h1>
+            <a href="logout.php">
+                <img src="img/salir.png" alt="Salir">
+            </a>
+        </div>
 
-</header>
+    </header>
 
 <body>
 
@@ -59,7 +59,7 @@
 
 
     </div>
-
+    
 </body>
 
 </html>

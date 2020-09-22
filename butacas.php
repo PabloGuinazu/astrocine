@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel='stylesheet' href="css/normalize.css">
 
-    <link rel='stylesheet' href="css/styles.css">
+    <link rel='stylesheet' href="css/styles4.css">
 </head>
 <header>
     <div class="barra">
@@ -32,7 +32,7 @@
     
         ?>
 
-    <div class="contenedor ">
+    <div class="contenedor butaca-con">
             <div class="negro  centrar estilo-titulo">pantalla</div>
             <div class="zona-asientos gris">
                 <?php
@@ -50,6 +50,7 @@
             <br>
        
     </div>
+    
 </body>
 
 </html>

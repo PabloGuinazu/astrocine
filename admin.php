@@ -8,7 +8,7 @@
     <link rel="icon" type="image/jpg" href="img/antesicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Special+Elite&display=swap" rel="stylesheet">
     <link rel='stylesheet' href="css/normalize.css">
-    <link rel='stylesheet' href="css/styles.css" type="text/css">
+    <link rel='stylesheet' href="css/styles4.css" type="text/css">
 
 </head>
 <header>
